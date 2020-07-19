@@ -1,0 +1,85 @@
+@import" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-inline-box;
+}
+
+.login {
+    font-family: Poppins-Bold;
+    position: sticky;
+    top: 10%;
+    left: 34%;
+    color: rgba(24, 73, 212, 0.97);
+    height: 630px;
+    background-color: white;
+    width: 400px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(24, 73, 212, 0.97);
+    border-image: initial;
+    box-shadow: 0 0 20px black;
+}
+
+.login h1 {
+    float: inline-end;
+    font-size: 40px;
+    padding: 4px;
+    margin-bottom: 10px;
+    padding-bottom: 11px;
+    border-bottom: 5px solid #1849d4f7;
+    color: white;
+    background-color: #1849d4f7;
+    border: 2px solid rgb(8, 140, 91);
+}
+
+.textbox {
+    float: right;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #1849d4f7;
+    box-shadow: 0 0 13px black;
+}
+
+.textbox input {
+    outline: none;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 23px;
+    border: lawngreen;
+    float: inline-start;
+}
+
+.btn {
+    width: 100%;
+    background: #1849d4f7;
+    float: auto;
+    border: 2px solid rgb(8, 140, 91);
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 0 11px 0px black;
+    box-shadow: inset 0 0 13px black;
+}
+
+.link {
+    margin-bottom: 10px;
+    padding: 5px;
+    color: #2196F3;
+    float: right;
+    text-align: left;
+}
+
+.images {
+    background-color: white;
+    border: crimson;
+}
+
+.h3 {
+    text-shadow: 0px 0px 0px black
+}

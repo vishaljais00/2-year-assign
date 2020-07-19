@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="log.css">
+    <script type="text/javascript">
+        function loginfrom() {
+
+            var username = document.getElementById("uname");
+            var password = document.getElementById("pass");
+
+            if (username.value.trim() == "") {
+                alert("Enter user name")
+                document.getElementById("lbl1").style.visibility = "visible";
+
+                return false;
+
+            } else if (password.value.trim() == "") {
+
+                alert("enter password");
+                document.getElementById("lbl2").style.visibility = "visible";
+                return false;
+            } else if (password.value.trim().length <= 6) {
+
+                alert(" Short password")
+                document.getElementById("lbl2").style.visibility = "visible";
+                return false;
+
+            } else {
+                alert("your welcome")
+                document.getElementById("lbl2").style.visibility = "hidden";
+                document.getElementById("lbl2").style.visibility = "hidden";
+                return true;
+            }
+        }
+    </script>
+</head>
+
+<body style="background-image: url(Images/creative.jpg);">
+    <form onsubmit="return loginfrom();" action="fade.html">
+
+
+        <div class="login">
+            <h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp LOGIN</h1>
+            <h3>USERNAME</h3>
+            <div class="textbox">
+                <img class="images" src="icon\user.png" style="width: 0.8cm;">
+                <input type="text" id="uname" placeholder="Enter your username">
+                <label id="lbl1" style="color:rgb(177, 50, 11); visibility: hidden">Invalid </label><br />
+
+            </div>
+            <h3>PASSWORD</h3>
+            <div class="textbox">
+                <img class="images" src="icon\password.png" style="width: 0.8cm;" style="border: bottom 5cm;">
+                <input type="password" id="pass" placeholder="Enter your Password">
+                <label id="lbl2" style="color:rgb(177, 50, 11) ; visibility : hidden ">Invalid </label><br />
+
+            </div>
+            <div>
+                <a class="link" href="#">forgot password ?</a>
+            </div><br/>
+            <button class="btn" id="btn" type="submit"> LOG-IN </button>
+            <br/> <br/>
+            <h2 style="margin-left:3cm;">Or Sign Up Using</h2>
+            <div class="images">
+
+
+
+                <a style="width: 0.8cm; margin-left: 3.6cm;" href="https://www.facebook.com"><img src="icon\facebook.png" style="width: 1cm" ;></a>
+                &nbsp;
+                <a style="width: 0.8cm;" href="https://www.instagram.com"><img src="icon\instragram.jfif" style="width: 1cm" ;></a>
+                &nbsp;
+                <a style="width: 0.8cm;" href="https://www.twitter.com"><img src="icon\twitter.png" style="width: 1cm" ;></a>
+
+
+                <h2 style="margin-left:5cm;"> Or </h2>
+                <a href="registration.html">
+                    <button class="btn" type="button" style="margin-left:0cm; ">Sign Up</button>
+                </a>
+
+
+            </div>
+
+
+    </form>
+
+</body>
+
+</html>

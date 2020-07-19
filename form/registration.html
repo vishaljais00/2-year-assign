@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="utills.css">
+    <script type="text/javascript">
+        function regs() {
+
+            var username = document.getElementById("fname").value;
+            var lname = document.getElementById("lname").value;
+            var pass = document.getElementById("pass").value;
+            var repass = document.getElementById("repass").value;
+            var date = document.getElementById("date").value;
+            var rd1 = document.getElementById("rd1").value;
+            var rd2 = document.getElementById("rd2").value;
+            var rd3 = document.getElementById("rd3").value;
+            var email = document.getElementById("mail").value;
+            var regx = /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9-]+)\.([a-z]{2,8})(.[a-z]{2,8})?$/;
+
+
+            if (username.trim() == "") {
+                alert("Enter user name");
+
+                return false;
+
+            } else if (lname.trim() == "") {
+
+                alert("enter last name");
+                return false;
+
+
+            } else if (pass.trim() == "") {
+
+                alert("Enter password")
+                return false;
+
+
+
+
+            } else if (pass.trim().length < 6) {
+
+                alert("Short password")
+                return false;
+
+
+
+            } else if (repass.trim() != pass.trim()) {
+
+                alert(" password does not match")
+                return false;
+
+            } else if (date.trim() == "") {
+
+                alert(" Enter DOB ")
+                return false;
+
+            } else if (regx.test(email)) {
+                alert(" Your Welcome")
+                return true;
+
+            } else {
+
+                alert("put valid email")
+                return false;
+
+
+            }
+        }
+    </script>
+</head>
+
+<body background="images\creative.jpg">
+    <form onsubmit="return regs()" action="fade.html">
+        <div class="registration">
+            <h1 style="color: cornsilk;"> Create a new account </h1>
+            <h2 class="Ass" style="border-bottom: 1px solid #1849d4f7;color: cornsilk" ;> It's quick and easy. </h2>
+            <div class="data">
+                <span>  Name -  &nbsp;&nbsp;  </span>
+                <input id="fname" style="margin-left: 1.5cm;" type="text" placeholder="First name">
+                <input id="lname" type="text" placeholder="Last name">
+            </div>
+            <div class="data" ;>
+                <span>  Gender - &nbsp; </span>
+                <input id="rd1" style="margin-left: 1.4cm;" type="radio" name="gender" value="male" checked> <span>Male</span>
+                <input id="rd2" type="radio" name="gender" value="female"> <span>Female</span>
+                <input id="rd3" type="radio" name="gender" value="other"><span> Other</span>
+            </div>
+            <div class="data">
+                <span>  Email -  &nbsp;&nbsp;  </span>
+                <input style="margin-left: 1.5cm;" type="text" id="mail" placeholder=" Your Email ">
+            </div>
+            <div class="data">
+                <span>  Password -  &nbsp;&nbsp;  </span>
+                <input style="margin-left: 0.7cm;" type="password" id="pass" placeholder="Enter your password "><br><br>
+
+
+                <input style="margin-left: 3.6cm; " type="password" id="repass" placeholder="Re-enter your password ">
+            </div>
+            <div class="data">
+                <span>  DOB -  &nbsp;&nbsp;  </span>
+                <input id="date" style="margin-left: 1.6cm; width:35% ; font-size: medium;" type="date">
+            </div><br>
+            <div>
+                <button class="btn" id="btn1" type="submit">Sign Up</button>
+            </div>
+            <div class="images">
+                <h2 style="margin-left:4cm; color: cornsilk;">Or Sign Up Using</h2>
+                <a style="width: 0.8cm; margin-left: 4.5cm;" href="https://www.facebook.com"><img src="icon\facebook.png" style="width: 1cm" ;></a>
+                &nbsp;
+                <a style="width: 0.8cm;" href="https://www.instagram.com"><img src="icon\instragram.jfif" style="width: 1cm" ;></a>
+                &nbsp;
+                <a style="width: 0.8cm;" href="https://www.twitter.com"><img src="icon\twitter.png" style="width: 1cm" ;></a>
+
+            </div>
+            <div class="data">
+                <h3 style="margin-left:3.3cm; color: cornsilk; "> Already Have an Account ? </h3>
+            </div>
+            <div>
+                <a href="login.html">
+                    <button class="btn" type="button"> LOG IN</button>
+                </a>
+            </div>
+        </div>
+
+
+
+    </form>
+
+</body>
+
+</html>

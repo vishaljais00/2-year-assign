@@ -1,0 +1,58 @@
+@import" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-inline-box;
+}
+
+.registration {
+    float: right;
+    font-family: Poppins-Bold;
+    position:sticky;
+    top: 5%;
+    left: 60%;
+    height: 700px;
+    background-image: url(regs.jfif);
+    width: 500px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.97);
+    border-image: initial;
+    box-shadow: 0 0 20px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.registration h2 {
+    scroll-padding-top: 0.2cm;
+    color: black;
+    font-weight: bolder;
+}
+
+.data {
+    width: 100%;
+    font-size: 20px;
+    padding: 4px 0;
+    margin: 8px 0;
+}
+
+.btn {
+    padding: 8px;
+    border-bottom: 1px solid #1849d4f7;
+    width: 100%;
+    padding-bottom: 15px;
+    background: #1849d4f7;
+    border: navy;
+    font-size: 18px;
+    box-shadow: 0 0 19px 2px black;
+    box-shadow: inset 0 0 20px black;
+}
+
+.registration span {
+    color: white;
+}
+
+.registration input {
+    text-shadow: 0 0 black;
+    box-shadow: inset 0 0 9px 0px black;
+    color: black;
+}
