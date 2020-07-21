@@ -6,7 +6,7 @@ body, html  {
   
   
   #main {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+    background-image: linear-gradient(rgba(247, 57, 10, 0.7), rgba(226, 241, 14, 0.925)), 
     url(http://szzljy.com/data/27/free-comic-book-wallpaper/free-comic-book-wallpaper-3.jpg);
     font-family: helvetica, sans-serif;
     width: 100%;
@@ -40,7 +40,7 @@ body, html  {
   }
   
   img {
-    max-width: 100%;
+    width: 100%;
     display: block;
     height: auto;
   }
@@ -52,6 +52,7 @@ body, html  {
   
   #img-div {
     color: white;
+    
   }
   
   #img-caption p {
@@ -59,21 +60,18 @@ body, html  {
     text-align: center;
   }
   
-  .credit {
-    font-size: 12px;
-    color: white;
+  
+  
+   a {
+    color: rgb(0, 0, 0);
   }
   
-  .credit a {
-    color: white;
+  a:hover {
+    background-color: rgb(255, 254, 254);
   }
   
-  .credit a:hover {
-    background-color: green;
-  }
-  
-  .credit a:visited {
-    color: white;
+ a:visited {
+    color:  rgba(0, 0, 0, 0.945);
   }
   
   .quote {
@@ -88,14 +86,6 @@ body, html  {
   
   .timeline h2 {
     padding: 25px 0px 0px 40px;
-  }
-  
-  ul {
-    padding-bottom: 10px;
-  }
-  
-  li {
-    margin: 10px;
   }
   
   #tribute-info {
@@ -117,3 +107,48 @@ body, html  {
     background-color: green;
   
   }
+  #tbl{
+         margin: 40px;
+         text-align: center;
+         width: 400px;
+         height: auto;
+         float: left;
+  }
+  #row{
+    width: max-content;
+   
+  }
+  th{
+    width: 150px;
+  }
+  td{
+    padding: 5px;
+    margin: 8px;
+    line-height: 25px;
+   border-bottom: 2px solid rgb(252, 106, 1);
+  }
+  #about{
+    width: max-content;
+   display: block;
+   background: lightgrey;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: left;
+    line-height: 120%;
+    
+  }
+ul{
+  margin-top: 60px
+};
+@media screen and (max-width: 400px) {
+  #tbl {
+     float: none;
+
+  }
+} 
+@media screen and (max-width: 700px) {
+  table {
+     float: none;
+
+  }
+} 
